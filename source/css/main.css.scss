@@ -4,13 +4,22 @@ body {padding-top: 80px;}
   .brand {
     img {height: 36px; width: 36px;}
   }
-
+  .pull-right {
+    a {margin-top: 8px;}
+  }
 }
 
-.hero-text {
-  h1 {margin: 20px 0;}
-  img {width: 165px; margin: 30px auto; display: block;}
-  .addthis_toolbox {margin-top: 40px;}
+.hero-unit {
+  padding-top: 20px; padding-bottom: 20px;
+
+  .hero-text {
+    .addthis_toolbox {margin-top: 5px;}
+    .pull {width: 50%; height: 40px;}
+    .left {float: left;}
+    .right {float: right;
+      a {float: right; clear: both;}
+    }
+  }
 }
 
 .screenies {
@@ -21,3 +30,17 @@ body {padding-top: 80px;}
 }
 
 footer {margin: 50px 0 0 0;}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
